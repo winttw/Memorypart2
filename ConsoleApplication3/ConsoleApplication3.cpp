@@ -22,7 +22,7 @@ int main()
 
 	uintptr_t memoryAddress;
 	//cout << "Memory location: ";
-	memoryAddress = 0x0E34DC8C;
+	memoryAddress = 0x0E34DC8C; //HARDCODED because i couldnt get the line underneath to work
 	//cin >> hex >> memoryAddress;
 	
 	BOOL rpmReturn = ReadProcessMemory(hProcess, (LPCVOID)memoryAddress, &intRead, sizeof(int), NULL);
